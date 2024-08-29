@@ -40,7 +40,7 @@
     </style>
   </head>
   <body class="font-manrope">
-    <header class=" max-w-screen-xl mx-auto px-8 lg:px-24 flex flex-col my-20 pt-10 lg:flex-row gap-5 md:gap-0 md:mb-32 justify-between" >
+    <header class=" max-w-screen-xl mx-auto px-8 lg:px-24 flex flex-col my-20 lg:flex-row gap-5 md:gap-0 md:mb-32 justify-between" >
       <div>
         <h1 class="text-5xl font-extrabold text-[#1C1C1C] md:text-7xl">
           It's good <br />
@@ -84,7 +84,7 @@
     </header>
     <main class=" max-w-screen-xl mx-auto px-8 lg:px-24">
       <!-- products section  -->
-      <section class="text-center my-16 md:my-32">
+      <section class="text-center my-20 lg:my-32">
         <div>
           <h1 class="text-3xl font-extrabold md:text-5xl mb-5 text-[#1C1C1C]">
             Our Featured Products
@@ -132,15 +132,16 @@
         </div>
       </section>
       <!--Fresh section  -->
-       <section class="flex flex-col md:flex-row justify-between gap-6">
+       <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12">
         <!-- img content  -->
-        <div class="grid grid-cols-2 grid-rows-6 gap-8">
+        <div class="grid grid-cols-2 grid-rows-6 gap-4 md:gap-8">
           <div class="row-span-2 rounded-xl  bg-gradient-to-r from-[#FF0000]/[0.1] to-[#FF8938]/[0.1] "></div>
-          <div class="bg-[#E6A623]/[0.1] row-span-4 rounded-xl p-4 md:p-7"><img src="images/fresh-1.png" class="mt-8" alt=""></div>
-          <div class="bg-[#577639]/[0.1] row-span-4 rounded-xl p-5 md:p-10"><img src="images/fresh-2.png" alt=""></div>
+          <div class="bg-[#E6A623]/[0.1] row-span-4 rounded-xl p-4 md:p-7"><img src="images/fresh-1.png" class="mx-auto mt-8" alt=""></div>
+          <div class="bg-[#577639]/[0.1] row-span-4 rounded-xl p-5 md:p-10"><img class="mx-auto" src="images/fresh-2.png" alt=""></div>
           <div class="row-span-2 rounded-xl bg-gradient-to-r from-[#D9D9D9] to-white"></div>
         </div>
-        <div class="w-full md:w-1/2 gap-6">
+        <!-- text-content  -->
+        <div class="space-y-6">
           <div>
             <h2 class="font-extrabold text-2xl md:text-4xl text-[#1C1C1C]">Great Tea, Freshly Presented</h2>
           <p class="font-medium text-[#777777] text-xs md:text-base mt-3 mb-4 md:mb-7" >The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
@@ -156,15 +157,54 @@
         </div>
        </section>
        <!-- clients section  -->
-       <section class="my-16 md:my-32 bg-gradient-to-l from-[#FF0000] to-[#FF8938] rounded-xl p-8 md:p-20">
-          <div class="w-1/2">
-           <h1 class="text-3xl md:text-5xl font-extrabold text-[#F4F4F4]">Meet Our Super Clients</h1>
-           <p class="font-medium text-[#F4F4F4] text-xs md:text-base my-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-           <button class=" bg-white p-3 md:px-7 md:py-4 rounded-lg"><span class="text-[#FF8938] font-medium text-xl ">Show all</span></button>
+       <section class="my-20 lg:my-32">
+        <div class="grid grid-cols-1 lg:grid-cols-2 bg-gradient-to-l from-[#FF0000] to-[#FF8938] rounded-xl p-8 md:p-16 gap-5">
+          <!-- text area  -->
+          <div class="flex items-center">
+            <div class="w-5/6">
+              <h1 class="text-3xl md:text-5xl font-extrabold text-[#F4F4F4]">Meet Our Super Clients</h1>
+              <p class="font-medium text-[#F4F4F4] text-xs md:text-base my-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+              <button class=" bg-white p-3 md:px-7 md:py-4 rounded-lg"><span class="text-[#FF8938] font-medium text-xl ">Show all</span></button>
+             </div>
           </div>
-          <div>
+           <!-- grid area  -->
+           <div class="relative p-8">
 
-          </div>
+            <!-- top card  -->
+            <div class="absolute top-36">
+              <div class="w-full relative bg-white rounded-lg p-10 md:p-10 z-10 top-4 md:-left-16">
+                <div class="rounded-full absolute -top-7 -left-7 border-4 border-white"><img class="w-full" src="images/client.png" alt=""></div>
+                <div class="w-full">
+                  <p class="font-medium text-[#777777] text-xs md:text-base">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                  <h5 class="font-bold text-xl text-[#1c1c1c] mt-5">Ilham Yuda</h5>
+                  <p class="font-medium text-[#777777] text-xs md:text-base mt-1">Businessman</p>
+                </div>
+                <div class="absolute bottom-4 right-4"><img src="images/circles.png" alt=""></div>
+              </div>
+             </div>
+             <!-- card 1  -->
+             <div class="w-5/6 h-60 relative bg-white rounded-lg p-10 md:p-10 opacity-30 left-20 -top-5">
+              <div class="rounded-full absolute -top-7 -left-7 border-4 border-white"><img class="w-full" src="images/client.png" alt=""></div>
+              <div class="w-full">
+                <p class="font-medium text-[#777777] text-xs md:text-base">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                <h5 class="font-bold text-xl text-[#1c1c1c] mt-5">Ilham Yuda</h5>
+                <p class="font-medium text-[#777777] text-xs md:text-base mt-1">Businessman</p>
+              </div>
+              <div class="absolute bottom-4 right-4"><img src="images/circles.png" alt=""></div>
+            </div>
+           
+            <!-- card 2  -->
+            <div class="w-5/6 relative bg-white rounded-lg p-10 md:p-10 opacity-30 top-5 left-20">
+              <div class="rounded-full absolute -top-7 -left-7 border-4 border-white"><img class="w-full" src="images/client.png" alt=""></div>
+              <div class="w-full">
+                <p class="font-medium text-[#777777] text-xs md:text-base">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                <h5 class="font-bold text-xl text-[#1c1c1c] mt-5">Ilham Yuda</h5>
+                <p class="font-medium text-[#777777] text-xs md:text-base mt-1">Businessman</p>
+              </div>
+              <div class="absolute bottom-4 right-4"><img src="images/circles.png" alt=""></div>
+            </div>
+           </div>
+        </div>
        </section>
        <!-- news section  -->
        <section>
@@ -213,7 +253,7 @@
         </div>
        </section>
     </main>
-    <footer class="bg-gradient-to-l from-[#FF0000]/[0.1] to-[#FF8938]/[0.1]">
+    <footer class="mt-20 md:mt-32 bg-gradient-to-l from-[#FF0000]/[0.1] to-[#FF8938]/[0.1]">
       <div class="max-w-screen-xl mx-auto px-8 lg:px-24">
         <div>
           <img src="images/cup.png" alt="">
